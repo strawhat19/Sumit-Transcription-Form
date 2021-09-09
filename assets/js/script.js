@@ -9,7 +9,7 @@ var dnaAnimation = bodymovin.loadAnimation({
     renderer: `svg`,
     loop: true,
     autoplay: true,
-    path: `../assets/json/DNA.json`
+    path: `./assets/js/DNA.json`
 })
 
 const form2 = $(`.form2`);
