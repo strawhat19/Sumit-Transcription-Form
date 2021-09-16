@@ -28,6 +28,7 @@ h1 {
     display: flex;
     grid-gap: .3em;
     align-items: center;
+    padding-bottom: .3em;
 }
 
 .yellowStroke {
@@ -112,7 +113,7 @@ input,select {
 }
 
 .inputRow {
-    padding: 1em 0;
+    padding: 0em 0 1em;
     display: flex;
     width: 85%;
     grid-gap: 1em;

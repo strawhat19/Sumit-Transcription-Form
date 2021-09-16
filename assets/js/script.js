@@ -27,9 +27,11 @@ form1.on(`submit`,event => {
 
     const phoneNumber = $(`.phoneNumber`).val();
     const language = $(`.languages`).val();
+    const position = $(`.position`).val();
 
     localStorage.setItem(`Phone Number`, phoneNumber)
     localStorage.setItem(`Language`, language)
+    localStorage.setItem(`Position`, position)
 
     $(`.form1`).hide(750);
     $(`.form2`).show(1500);

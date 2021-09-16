@@ -32,6 +32,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: .3em;
 }
 
 .yellowStroke {
@@ -138,7 +139,7 @@ input, select {
 }
 
 .inputRow {
-  padding: 1em 0;
+  padding: 0em 0 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
