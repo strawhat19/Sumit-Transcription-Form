@@ -172,6 +172,7 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
+  position: relative;
 }
 
 .infoSection div ul {
@@ -201,14 +202,14 @@ button:hover {
   -ms-flex-align: center;
   align-items: center;
   background: black;
-  color: white;
+  color: var(--yellow);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
   font-family: 'montserrat';
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 10px;
   border: solid 5px black;
   -webkit-transition: 150ms ease-in-out;
@@ -248,6 +249,13 @@ button:hover {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
+}
+
+.logoGif {
+  max-width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0%;
 }
 
 form {
