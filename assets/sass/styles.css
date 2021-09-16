@@ -78,7 +78,7 @@ h1 {
 }
 
 button {
-  width: 85%;
+  width: 100%;
   border: 5px solid #000;
   color: var(--yellow);
   background: black;
@@ -124,6 +124,132 @@ button:hover {
   font-family: 'Montserrat';
 }
 
+.trancriptionForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+  grid-template-columns: 58% 28%;
+  grid-gap: 2em;
+  width: 100%;
+}
+
+.formLeft {
+  width: 100%;
+}
+
+.formRight {
+  width: 100%;
+}
+
+.infoSection {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 0em;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0;
+}
+
+.infoSection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.infoSection div ul {
+  list-style: none;
+  padding: 1em;
+}
+
+.infoSection div ul li {
+  font-size: .8em;
+}
+
+.form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form2 .back {
+  margin: 4.2em 0em 1.5em;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: black;
+  color: white;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+  font-family: 'montserrat';
+  font-weight: 300;
+  border-radius: 10px;
+  border: solid 5px black;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  text-decoration: none;
+  -webkit-animation: scaleUp 150ms ease-in-out;
+          animation: scaleUp 150ms ease-in-out;
+}
+
+.form2 .back:hover {
+  background: white;
+  color: black;
+  font-weight: 600;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 form {
   margin: 3em;
 }
@@ -143,7 +269,7 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
+  width: 100%;
   grid-gap: 1em;
 }
 
@@ -151,7 +277,7 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -160,6 +286,18 @@ input, select {
 
 .inputRow2 input {
   width: 10%;
+}
+
+.accountForm {
+  width: 79%;
+  grid-gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .login {

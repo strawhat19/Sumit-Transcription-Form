@@ -18,6 +18,9 @@ form2.hide();
 const signIn = $(`.login`);
 signIn.hide();
 
+const back = $(`.back`);
+back.hide();
+
 const form1 = $(`.form1`);
 form1.on(`submit`,event => {
     event.preventDefault();
@@ -36,6 +39,7 @@ form1.on(`submit`,event => {
     $(`.form1`).hide(750);
     $(`.form2`).show(1500);
     setTimeout(() => {
+        back.show();
         signIn.fadeIn(1000);
     },1500)
 
