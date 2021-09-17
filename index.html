@@ -163,10 +163,20 @@
                 <div class="inputRow">
                     <input type="text" class="company" placeholder="Company">
                 </div>
-                <div class="inputRow2"><input type="checkbox" name="terms" value="agree"> I agree to our terms of service and privacy policy</div>
+                <div class="inputRow2"><input type="checkbox" name="terms" value="agree" class="termsAgreement"> I agree to our terms of service and privacy policy</div>
                 <button type="sumbit">Register</button>
             </form>
             <a class="back" href="./"><</a>
+        </div>
+        <div class="form3">
+            <form class="filesForm">
+                <h1>Upload your <span class="yellowStroke">Resume!</span></h1>
+                <div class="fileInputArea">
+                    <div class="dropZone">Choose Files <span class="filesSelected">or Drag & Drop</span><span class="filesSelected">No file chosen</span></div>
+                    <a class="back" href="./"><</a>
+                </div>
+                <input class="fileInput" type="file" name="myFile[]" accept=".doc,.pdf,.docx,.html,.png,.jpeg,.jpg" multiple>
+            </form>
         </div>
     </div>
     
