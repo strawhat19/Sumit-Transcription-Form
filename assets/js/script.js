@@ -153,13 +153,16 @@ function fileHandler(event,fileList) {
                 icon = file.type;
                 switch (icon) {
                     case `audio/mp3`:
+                    case `audio/mpeg`:
                     return icon = `<i class="fas fa-file-audio"></i>`;
                     case `video/mp4`: 
                     return icon = `<i class="fas fa-file-video"></i>`;
-                    case `audio/mpeg`:
-                    return icon = `<i class="fas fa-file-audio"></i>`;
+                    case `image/png`:
+                    case `image/jpg`:
+                    case `image/jpeg`:
+                    return icon = `<i class="fas fa-file-image"></i>`;
                     default:
-                    return icon = `<i class="fas fa-file-pdf"></i>`;
+                    return icon = `<i class="fas fa-file-upload"></i>`;
                 } // Generating Icon Based on Which File Type
                 return icon;
             }) // Generating File Card Elements
