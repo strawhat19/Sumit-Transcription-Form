@@ -171,12 +171,139 @@
             <a class="back" href="./"><</a>
         </div>
         <div class="form3">
+            <form class="backgroundForm" action="" method="post">
+                <h1>Background <span class="yellowStroke">Assessment!</span></h1>
+                <div class="inputRow">
+                    <select class="position languages education" data-placeholder="What is your highest level of education?">
+                        <option value="Choose">1. What is your highest level of education?</option>
+                        <option value="No Education">No Education</option>
+                        <option value="Elementary / Middle School">Elementary / Middle School</option>
+                        <option value="High School / GED">High School / GED</option>
+                        <option value="Associates' Degree">Associates' Degree</option>
+                        <option value="Bachelors Degree">Bachelors Degree</option>
+                        <option value="Doctorate / Professional Degree">Doctorate / Professional Degree</option>
+                    </select>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages workExperience" data-placeholder="How many years of work experience do you have?">
+                        <option value="Choose">2. How many years of work experience do you have?</option>
+                        <option value="No work experience">No work experience</option>
+                        <option value="1 - 2 Years">1 - 2 Years</option>
+                        <option value="3 - 4 Years">3 - 4 Years</option>
+                        <option value="5+ Years">5+ Years</option>
+                    </select>
+                </div>
+                <div class="inputRow checkboxRow">
+                    <div class="label">3. Please select if you have experience working in any of the following industries:</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience1" name="experience1" value="Administrative / Supportive"> Administrative / Supportive</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience2" name="experience2" value="Legal / Law Enforcement"> Legal / Law Enforcement</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience3" name="experience3" value="Customer Service"> Customer Service</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience4" name="experience4" value="Marketing / Public Relations"> Marketing / Public Relations</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience5" name="experience5" value="Engineering"> Engineering</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience6" name="experience6" value="Education / Academia"> Education / Academia</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience7" name="experience7" value="Finance / Accounting"> Finance / Accounting</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience8" name="experience8" value="Technology"> Technology</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience9" name="experience9" value="Health Care"> Health Care</div>
+                    <div class="inputRow2"><input type="checkbox" id="experience10" name="experience10" value="Other"> Other</div>
+                </div>
+                <div class="inputRow checkboxRow">
+                    <div class="label">4. Please select the topics that interest you:</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic1" name="topic1" value="Business"> Business</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic2" name="topic2" value="Politics"> Politics</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic3" name="topic3" value="Education"> Education</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic4" name="topic4" value="Religion"> Religion</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic5" name="topic5" value="Entertainment"> Entertainment</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic6" name="topic6" value="Science"> Science</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic7" name="topic7" value="Health"> Health</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic8" name="topic8" value="Sports"> Sports</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic9" name="topic9" value="Law"> Law</div>
+                    <div class="inputRow2"><input type="checkbox" id="topic10" name="topic10" value="Other"> Other</div>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages priorExperience" data-placeholder="Do you have prior experience in transcriptioning?">
+                        <option value="Choose">5. Do you have prior experience in transcriptioning?</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages employmentStatus" data-placeholder="What is your current employment status?">
+                        <option value="Choose">6. What is your current employment status?</option>
+                        <option value="Student">Student</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Full-time">Full-time</option>
+                    </select>
+                </div>
+                <button type="sumbit">Next: Short Answer Section</button>
+            </form>
+        </div>
+        <div class="form4">
+            <form class="shortAnswer">
+                <h1>Short <span class="yellowStroke">Answer!</span></h1>
+                <div class="inputRow">
+                    <div class="label">1. Why do you want to work for Sumit?</div>
+                    <textarea placeholder="Please enter why you would like to work for us..."></textarea>
+                </div>
+                <div class="inputRow">
+                    <div class="label">2. How do you plan to fit freelancing with Sumit in with your current schedule?</div>
+                    <textarea placeholder="Please enter how you would fit us into your current schedule..."></textarea>
+                </div>
+                <div class="inputRow">
+                    <div class="label">3. What is your favorite fast food chain or food brand and why?</div>
+                    <textarea placeholder="Please enter your favorite fast food chain or food brand and why this is your favorite..."></textarea>
+                </div>
+                <button type="sumbit">Skills Assessment</button>
+            </form>
+        </div>
+        <div class="form5">
+            <form class="skillsAssessment">
+                <h1>Skills <span class="yellowStroke">Assessment!</span></h1>
+                <div class="inputRow">Select whether the following statements are grammatically correct or if they are incorrect. Take into account items such as: capitalization, comma placement, homophones, spelling, and verb tense.</div>
+                <div class="inputRow">
+                    <div class="label">1. Last night's storm had both lightening and thunder.</div>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages priorExperience" data-placeholder="Do you have prior experience in transcriptioning?">
+                        <option value="Choose">Is the above sentence grammatically correct?</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="inputRow">
+                    <div class="label">2. Irregardless, they decided to continue the hike through the rain.</div>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages priorExperience" data-placeholder="Do you have prior experience in transcriptioning?">
+                        <option value="Choose">Is the above sentence grammatically correct?</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="inputRow">
+                    <div class="label">3. My dad watches the news on TV every evening.</div>
+                </div>
+                <div class="inputRow">
+                    <select class="position languages priorExperience" data-placeholder="Do you have prior experience in transcriptioning?">
+                        <option value="Choose">Is the above sentence grammatically correct?</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <button type="sumbit">Skills Assessment</button>
+            </form>
+        </div>
+        <div class="form6">
             <form class="filesForm">
-                <h1>Upload your <span class="yellowStroke">Resume!</span></h1>
+                <h1>Upload your <span class="yellowStroke">Files!</span></h1>
+                <div class="inputRow">
+                    Please upload your resume as well as an example sample transcription you have done before.
+                </div>
                 <div class="fileInputArea">
-                    <div class="dropZone">Choose Files <span class="filesSelected">or Drag & Drop</span><span class="filesSelected">No file chosen</span></div>
+                    <div class="dropZone">Choose Files <span class="filesSelected">or Drag & Drop</span><span class="filesSelected">No file chosen yet</span></div>
                 </div>
                 <input class="fileInput" type="file" name="myFile[]" accept=".doc,.pdf,.docx,.html,.png,.jpeg,.jpg" multiple>
+                <button type="sumbit">Submit Files</button>
             </form>
         </div>
     </div>

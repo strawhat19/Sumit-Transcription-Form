@@ -58,7 +58,7 @@ h1 {
   height: 136%;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  position: absolute;
+  position: fixed;
   top: -160px;
   right: -590px;
   z-index: -1;
@@ -75,6 +75,14 @@ h1 {
   border: 5px solid #000;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+
+.wideForm {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  margin: 3em 10em;
 }
 
 .logo {
@@ -447,8 +455,56 @@ input, select {
   font-weight: 600;
 }
 
-.filesForm {
+.backgroundForm select {
+  padding: 0.1em 0em 0.1em .5em;
+  border: solid 4px #000;
+}
+
+.backgroundForm .checkboxRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.backgroundForm .checkboxRow .label {
   width: 100%;
+  font-size: .9em;
+}
+
+.backgroundForm .checkboxRow .inputRow2 {
+  padding-bottom: 0;
+  width: 48%;
+  grid-gap: .5em;
+  font-size: .8em;
+}
+
+.backgroundForm .checkboxRow input {
+  width: 5%;
+  margin-left: 1em;
+}
+
+.shortAnswer .inputRow {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shortAnswer textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1em;
+  border: 3px solid #000;
+  min-height: 70px;
+  font-weight: 600;
+  font-family: 'montserrat';
+  font-size: .9em;
+}
+
+.filesForm {
+  width: 89%;
   grid-gap: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +513,7 @@ input, select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3em 4em 3em;
+  margin: 3em 3.5em 3em;
 }
 
 .fileInputArea {
@@ -474,8 +530,9 @@ input, select {
 
 .dropZone {
   height: 8em;
-  width: 85%;
+  width: 100%;
   cursor: pointer;
+  position: relative;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -55,7 +55,7 @@ h1 {
     height: 136%;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    position: absolute;
+    position: fixed;
     top: -160px;
     right: -590px;
     z-index: -1;
@@ -71,6 +71,12 @@ h1 {
     background: rgba(255, 255, 255, 0.5);
     border: 5px solid #000;
     backdrop-filter: blur(5px);
+    transition: 150ms ease-in-out;
+}
+
+.wideForm {
+    transition: 150ms ease-in-out;
+    margin: 3em 10em;
 }
 
 .logo {
@@ -332,12 +338,53 @@ input,select {
     }
 }
 
+.backgroundForm {
+    select {
+        padding: 0.1em 0em 0.1em .5em;
+        border: solid 4px #000;
+    }
+    .checkboxRow {
+        display: flex;
+        flex-wrap: wrap;
+        .label {
+            width: 100%;
+            font-size: .9em;
+        }
+        .inputRow2 {
+            padding-bottom: 0;
+            width: 48%;
+            grid-gap: .5em;
+            font-size: .8em;
+        }
+        input {
+            width: 5%;
+            margin-left: 1em;
+        }
+    }
+}
+
+.shortAnswer {
+    .inputRow {
+        flex-direction: column;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding: 1em;
+        border: 3px solid #000;
+        min-height: 70px;
+        font-weight: 600;
+        font-family: 'montserrat';
+        font-size: .9em;
+    }
+}
+
 .filesForm {
-    width: 100%;
+    width: 89%;
     grid-gap: 1em;
     display: flex;
     flex-direction: column;
-    margin: 3em 4em 3em;
+    margin: 3em 3.5em 3em;
 }
 
 .fileInputArea {
@@ -352,8 +399,9 @@ input,select {
 
   .dropZone {
     height: 8em;
-    width: 85%;
+    width: 100%;
     cursor: pointer;
+    position: relative;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -3,6 +3,8 @@ const body = $(`body`);
 body.attr(`style`,`display: none`);
 body.fadeIn(2000);
 
+const container = $(`.content`);
+
 // DNA Animation
 var dnaAnimation = bodymovin.loadAnimation({
     container: document.querySelector('#dna'),
@@ -14,8 +16,14 @@ var dnaAnimation = bodymovin.loadAnimation({
 
 const form2 = $(`.form2`);
 const form3 = $(`.form3`);
+const form4 = $(`.form4`);
+const form5 = $(`.form5`);
+const form6 = $(`.form6`);
 form2.hide();
 form3.hide();
+form4.hide();
+form5.hide();
+form6.hide();
 
 $(`.form3 .back`).hide();
 
@@ -95,6 +103,32 @@ form1.on(`submit`,event => {
                     $(`.form3 .back`).show();
                     signIn.fadeOut(1000);
                 },1500)
+
+                container.addClass(`wideForm`);
+
+                $(`.backgroundForm`).on(`submit`, event => {
+                    event.preventDefault();
+
+                    console.log(event);
+                    container.removeClass(`wideForm`);
+
+                    $(`.form3`).hide(750);
+                    $(`.form4`).show(1500);
+
+                    $(`.shortAnswer`).on(`submit`, event => {
+                        event.preventDefault();
+
+                        $(`.form4`).hide(750);
+                        $(`.form5`).show(1500);
+
+                        $(`.skillsAssessment`).on(`submit`, event => {
+                            event.preventDefault();
+
+                            $(`.form5`).hide(750);
+                            $(`.form6`).show(1500);
+                        })
+                    })
+                })
 
                 // User File Handler
                 var actualInput = $(`.fileInput`);
