@@ -1,6 +1,7 @@
 // Fading In Main Body
 const body = $(`body`);
-body.attr(`style`,`display: none`);
+body.toggleClass(`hidden`);
+// body.attr(`style`,`display: none`);
 body.fadeIn(2000);
 
 const container = $(`.content`);

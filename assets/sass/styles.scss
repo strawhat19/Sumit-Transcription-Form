@@ -12,6 +12,10 @@
     --gradient: linear-gradient(var(--orange) 50%,var(--yellow));
 }
 
+.hidden {
+    display: none;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;

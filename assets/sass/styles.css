@@ -9,11 +9,14 @@
   --gradient: linear-gradient(var(--orange) 50%,var(--yellow));
 }
 
+.hidden {
+  display: none;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,21 +25,17 @@ html {
 
 body {
   background: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-weight: 600;
 }
 
 h1 {
   font-size: 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  grid-gap: .3em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: .3em;
+  grid-gap: 0.3em;
+  align-items: center;
+  padding-bottom: 0.3em;
 }
 
 .yellowStroke {
@@ -56,7 +55,6 @@ h1 {
 .dna {
   width: 100%;
   height: 136%;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   position: fixed;
   top: -160px;
@@ -66,7 +64,6 @@ h1 {
 
 .content {
   margin: 10em;
-  -webkit-box-shadow: 0 0 11px #000;
   box-shadow: 0 0 11px #000;
   max-width: 1000px;
   padding: 2em 2em 2em 2em;
@@ -75,12 +72,10 @@ h1 {
   border: 5px solid #000;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
 }
 
 .wideForm {
-  -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
   margin: 3em 10em;
 }
@@ -96,13 +91,11 @@ button {
   background: black;
   border-radius: 10px;
   padding: 1em;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   cursor: pointer;
-  -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
 }
-
 button:hover {
   background: white;
   color: var(--orange);
@@ -112,34 +105,20 @@ button:hover {
   outline: none;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
   font-weight: 600;
   color: black;
-  font-family: 'Montserrat';
-}
-
-:-ms-input-placeholder {
-  font-weight: 600;
-  color: black;
-  font-family: 'Montserrat';
-}
-
-::-ms-input-placeholder {
-  font-weight: 600;
-  color: black;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 ::placeholder {
   font-weight: 600;
   color: black;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .trancriptionForm {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
   grid-template-columns: 58% 28%;
   grid-gap: 2em;
   width: 100%;
@@ -155,145 +134,83 @@ button:hover {
 
 .infoSection {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   grid-gap: 0em;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: space-between;
+  justify-content: space-between;
   padding: 1em 0;
 }
-
 .infoSection div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 10px;
   position: relative;
 }
-
 .infoSection div ul {
   list-style: none;
   padding: 1em;
 }
-
 .infoSection div ul li {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .form2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .back {
   margin: 4.2em 0em 1.5em;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
   width: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: black;
   color: var(--yellow);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   font-weight: 400;
   border-radius: 10px;
   border: solid 5px black;
-  -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
   text-decoration: none;
-  -webkit-animation: scaleUp 150ms ease-in-out;
-          animation: scaleUp 150ms ease-in-out;
+  animation: scaleUp 150ms ease-in-out;
 }
-
 .back:hover {
   background: white;
   color: black;
   font-weight: 600;
 }
 
-@-webkit-keyframes scaleUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(1, 0);
-            transform: scale(1, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-
 @keyframes scaleUp {
   0% {
     opacity: 0;
-    -webkit-transform: scale(1, 0);
-            transform: scale(1, 0);
+    transform: scale(1, 0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
-
 .logoGif {
   max-width: 50px;
   position: absolute;
   right: 0;
   top: 0%;
-  -webkit-animation: rotate 5000ms linear infinite;
-          animation: rotate 5000ms linear infinite;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: rotate 5000ms linear infinite;
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 form {
   margin: 3em;
 }
@@ -305,26 +222,20 @@ input, select {
   width: 100%;
   color: black;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .inputRow {
   padding: 0em 0 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   grid-gap: 1em;
 }
 
 .inputRow2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-bottom: 1em;
 }
 
@@ -335,17 +246,12 @@ input, select {
 .accountForm {
   width: 79%;
   grid-gap: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .login {
-  font-size: .2em;
+  font-size: 0.2em;
   margin-left: 3em;
   background: black;
   color: white;
@@ -364,33 +270,7 @@ input, select {
 
 .animateOnce path {
   fill: default;
-  -webkit-animation: textAnimate 5s ease-in-out;
-          animation: textAnimate 5s ease-in-out;
-}
-
-@-webkit-keyframes textAnimate {
-  0% {
-    fill-opacity: 0;
-    stroke: black;
-    stroke-width: 0px;
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset: 20%;
-  }
-  35% {
-    stroke: black;
-    stroke-dasharray: 50% 0;
-    stroke-width: 5px;
-  }
-  75% {
-    stroke-dasharray: 0 50%;
-    stroke-width: 0px;
-  }
-  100% {
-    fill: default;
-    fill-opacity: 1;
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset: -20%;
-  }
+  animation: textAnimate 5s ease-in-out;
 }
 
 @keyframes textAnimate {
@@ -417,38 +297,27 @@ input, select {
     stroke-dashoffset: -20%;
   }
 }
-
 .form3 .back {
   margin: 0;
-  -webkit-transform-origin: bottom;
   transform-origin: bottom;
   width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: black;
   color: white;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   font-weight: 400;
   border-radius: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 4px dashed black;
-  -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
   text-decoration: none;
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
-
 .form3 .back:hover {
   background: white;
   color: var(--orange);
@@ -456,42 +325,31 @@ input, select {
 }
 
 .backgroundForm select {
-  padding: 0.1em 0em 0.1em .5em;
+  padding: 0.1em 0em 0.1em 0.5em;
   border: solid 4px #000;
 }
-
 .backgroundForm .checkboxRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .backgroundForm .checkboxRow .label {
   width: 100%;
-  font-size: .9em;
+  font-size: 0.9em;
 }
-
 .backgroundForm .checkboxRow .inputRow2 {
   padding-bottom: 0;
   width: 48%;
-  grid-gap: .5em;
-  font-size: .8em;
+  grid-gap: 0.5em;
+  font-size: 0.8em;
 }
-
 .backgroundForm .checkboxRow input {
   width: 5%;
   margin-left: 1em;
 }
 
 .shortAnswer .inputRow {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .shortAnswer textarea {
   width: 100%;
   border-radius: 10px;
@@ -499,32 +357,25 @@ input, select {
   border: 3px solid #000;
   min-height: 70px;
   font-weight: 600;
-  font-family: 'montserrat';
-  font-size: .9em;
+  font-family: "montserrat";
+  font-size: 0.9em;
 }
 
 .filesForm {
   width: 89%;
   grid-gap: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 3em 3.5em 3em;
 }
 
 .fileInputArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .fileInput {
   padding: 1em;
-  font-family: 'Heebo' !important;
+  font-family: "Heebo" !important;
   display: none;
 }
 
@@ -534,13 +385,9 @@ input, select {
   cursor: pointer;
   position: relative;
   text-align: center;
-  display: -webkit-box;
   display: -ms-flexbox;
-  font-family: 'Heebo' !important;
+  font-family: "Heebo" !important;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   grid-gap: 0.7em;
   font-style: italic;
@@ -548,35 +395,19 @@ input, select {
   text-transform: uppercase;
   font-weight: 500;
   padding: 3em;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   color: black;
   outline: none;
   border-radius: 10px;
   border: 10px dashed black;
-  -webkit-box-shadow: inset 0 0 20px 1px var(--gray);
   box-shadow: inset 0 0 20px 1px var(--gray);
   background: white;
 }
 
 .drop-zone--over {
-  -webkit-animation: spinStroke 1s ease-in-out infinite alternate;
-          animation: spinStroke 1s ease-in-out infinite alternate;
-  -webkit-transition: 100ms ease-in-out;
+  animation: spinStroke 1s ease-in-out infinite alternate;
   transition: 100ms ease-in-out;
-}
-
-@-webkit-keyframes spinStroke {
-  0% {
-    border: 10px dashed black;
-  }
-  100% {
-    border: 10px dashed var(--yellow);
-  }
 }
 
 @keyframes spinStroke {
@@ -587,9 +418,8 @@ input, select {
     border: 10px dashed var(--yellow);
   }
 }
-
 .dropZone::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -600,21 +430,16 @@ input, select {
 
 .files {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   grid-gap: 3em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-bottom: 2em;
 }
 
 .filesSelected {
   text-transform: capitalize;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .fileCard {
@@ -623,35 +448,25 @@ input, select {
   font-style: italic;
   border: none;
   border-radius: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  font-family: 'Heebo' !important;
-  -webkit-transform: skewx(20deg);
+  font-family: "Heebo" !important;
   transform: skewx(20deg);
   position: relative;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: auto;
   grid-gap: 1em;
 }
-
 .fileCard i {
   font-style: italic;
   font-size: 2.5em;
-  padding: .3em;
+  padding: 0.3em;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .fileCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   left: -12px;
@@ -660,10 +475,8 @@ input, select {
   width: 100%;
   min-width: 100%;
   z-index: -3;
-  -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
 }
-
 .fileCard::after {
   content: attr(data-definition);
   position: absolute;
@@ -675,60 +488,25 @@ input, select {
   width: 100%;
   min-width: 100%;
   z-index: -3;
-  -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-@-webkit-keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
 }
 
 @keyframes slideRight {
   0% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    transform: translateX(300px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
-
-@-webkit-keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    transform: translateX(-300px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
